@@ -48,8 +48,8 @@ def countries():
             countriesNordVPN = False
 
         if countries and countriesNordVPN != False:
-            countries = " ".join(countries)
-            countriesNordVPN = " ".join(countriesNordVPN)
+            countries = ", ".join(countries)
+            countriesNordVPN = ", ".join(countriesNordVPN)
 
         if countries and countriesNordVPN != False:
             return render_template("countries.html", countries=countries, countriesNordVPN=countriesNordVPN)
