@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+    <title> Netflix Streaming Countries </title>
+    <head>
+        <link href = "../static/main.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Netflix Country Scraper</h1>
+            <h3>Enter a movie or show to find out which countries it streams in!</h3>
+            <form action="{{url_for('countries')}}" method="POST">
+                <input title="Enter Media" type="text" name="media_name" required="" autocomplete="off"> <br>
+            </form>
+        </div>
+    </body>
+</html>
